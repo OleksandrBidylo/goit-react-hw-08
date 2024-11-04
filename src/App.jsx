@@ -11,7 +11,7 @@ import NotFound from "./pages/NotFound";
 import ContactsPg from "./pages/ContactsPg";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { fetchContacts } from "./redux/contactsOps";
+import { fetchContacts } from "./redux/contacts/operations";
 import { selectIsLoggedIn, selectIsRefreshing } from "./redux/auth/selectors";
 import { refresh } from "./redux/auth/operations";
 import { PrivatRoute } from "./Routes/PrivatRoutes";

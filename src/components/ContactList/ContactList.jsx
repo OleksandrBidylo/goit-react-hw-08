@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import {
   selectFilteredContacts,
   selectLoading,
-} from "../../redux/contactsSlice";
+} from "../../redux/contacts/selectors";
 
 const ContactList = () => {
   const Loading = useSelector(selectLoading);

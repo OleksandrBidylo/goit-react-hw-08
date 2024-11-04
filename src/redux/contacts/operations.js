@@ -1,5 +1,5 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { goitApi } from "./auth/operations";
+import { goitApi } from "../auth/operations";
 
 export const fetchContacts = createAsyncThunk(
   "fetchContacts",
@@ -12,13 +12,12 @@ export const fetchContacts = createAsyncThunk(
     }
   }
 );
-
 export const deleteContactThunk = createAsyncThunk(
   "deleteContact",
   async (contactId, thunkApi) => {
     try {
-      const { data } = await goitApi.delete(`/contacts/${contactId}`);
-      return data.contactId;
+      await goitApi.delete(`/contacts/${contactId}`);
+      return contactId;
     } catch (error) {
       return thunkApi.rejectWithValue(error.message);
     }

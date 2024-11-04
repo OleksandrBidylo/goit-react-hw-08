@@ -14,6 +14,5 @@ const slice = createSlice({
   },
 });
 
-export const selectSearchString = (state) => state.filContacts.SearchString;
 export const filContactsReducer = slice.reducer;
 export const { changeSearch } = slice.actions;

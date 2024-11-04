@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { contactsReducer } from "./contactsSlice";
-import { filContactsReducer } from "./filtersSlice";
+import { contactsReducer } from "./contacts/slice";
+import { filContactsReducer } from "./filters/slice";
 import { authSlice } from "./auth/slice";
 
 import {
