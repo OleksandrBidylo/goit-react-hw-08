@@ -1,11 +1,7 @@
 const Home = () => {
   return (
     <div>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, animi
-        veniam autem recusandae ipsa eveniet debitis ab harum iure quisquam
-        ducimus dolorem sed enim sit quas incidunt quasi, mollitia asperiores.
-      </h1>
+      <h1>Application where you can add people to your contact list</h1>
     </div>
   );
 };
