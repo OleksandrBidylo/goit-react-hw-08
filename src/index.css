@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(34, 34, 34);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.wrap {
+  color: white;
+}
